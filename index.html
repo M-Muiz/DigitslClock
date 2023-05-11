@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeZone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="java/function.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TimeZone</h1>
+      <div class="now">
+        <div class="date">00</div>
+        <div class="flex">
+          <div class="hours">00</div>
+          <div class="minutes">00</div>
+          <div class="seconds">00</div>
+          <div class="format">AM</div>
+        </div>
+      </div>
+
+      <div class="buttons-main">
+        <button id="timercontainer" class="btn-main">Timer</button>
+        <button id="stopWatchcontainer" class="btn-main">StopWatch</button>
+      </div>
+    </div>
+
+    <div class="stopWatch">
+      <h1>StopWatch</h1>
+      <div id="show-time">
+        <div id="hour">00 :</div>
+        <div id="minute">00 :</div>
+        <div id="second">00 :</div>
+        <div id="msecond">00</div>
+      </div>
+      <div class="buttons">
+        <button id="start-btn" class="custom-btn">Start</button>
+        <button id="stop-btn" class="custom-btn">Stop</button>
+        <button id="reset-btn" class="custom-btn">Reset</button>
+      </div>
+      <div class="back-div">
+        <button id="stopWatch-back" class="back-button">Back</button>
+      </div>
+    </div>
+
+    <div class="timer">
+      <div oninput="showingresult()" class="flex-timer">
+        <input
+          type="number"
+          disabled
+          id="hours-timer"
+          min="0"
+          max="24"
+          placeholder="Hours"
+        />
+        <input
+          type="number"
+          disabled
+          id="minutes-timer"
+          min="0"
+          max="59"
+          placeholder="Minutes"
+        />
+        <input
+          type="number"
+          disabled
+          id="seconds-timer"
+          min="0"
+          max="59"
+          placeholder="Seconds"
+        />
+      </div>
+
+      <button id="set-timer" onclick="on()">Set Timer</button>
+
+      <div class="timer-result">00 : 00 : 00</div>
+
+      <div class="buttons">
+        <button
+          id="timerStart-btn"
+          class="custom-btn"
+          onclick="startTimerBtn()"
+        >
+          Start
+        </button>
+        <button id="timerReset-btn" class="custom-btn">Reset</button>
+      </div>
+
+      <div class="back-div">
+        <button id="timer-back" class="back-button">Back</button>
+      </div>
+    </div>
+
+    <div class="txt">Maded by Muhammad Muiz (SMIT)</div>
+  </body>
+</html>

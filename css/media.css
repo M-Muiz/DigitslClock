@@ -1,0 +1,38 @@
+@media only screen and (max-width: 620px){
+    .container{
+        width: 70%;
+    }
+    .timer{
+        width: 70%;
+    }
+    .stopWatch{
+        width: 85%;
+    }.buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 445px){
+    .container{
+        width: 90%;
+    }
+    .timer{
+        width: 90%;
+
+    }.stopWatch{
+        width: 90%;
+    }
+    .flex, .date{
+        font-size: 25px;
+        letter-spacing: 6px;
+    }
+    .buttons{
+        height: 100px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
